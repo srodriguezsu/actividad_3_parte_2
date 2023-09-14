@@ -1,16 +1,67 @@
 package FigurasGeometricas;
 
 public class TrianguloRectangulo {
-    private double base, altura, hipotenusa;
 
+    /* Atributos: base y altura en cm - Calcular: area, perimetro, hipotenusa y determinar tipo */
+    public enum TiposTriangulo { Isosceles, Escaleno }
+    private double base, altura, area, perimetro, hipotenusa;
+    private TiposTriangulo tipo;
+
+    /* Metodo para calcular */
+
+    private void determinarTipoTriangulo() {
+        if (base != altura && altura != hipotenusa) {
+            tipo = TiposTriangulo.Escaleno;
+        } else {
+            tipo = TiposTriangulo.Isosceles;
+        }
+    }
+
+    private void calcularHipotenusa(){
+        this.hipotenusa = Math.sqrt(Math.pow(base, 2) + Math.pow(altura, 2));
+    }
+    private void calcularArea(){
+        this.area = base * altura / 2;
+    }
+    private void calcularPerimetro(){
+        this.perimetro = base + altura + hipotenusa;
+    }
+
+    /* Constructor y setters para base y altura */
     public TrianguloRectangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
-        this.hipotenusa = Math.sqrt(Math.pow(base, 2) + Math.pow(altura, 2));
+        calcularArea();
+        calcularPerimetro();
+        calcularHipotenusa();
+        determinarTipoTriangulo();
+        }
+    public void setAltura(double altura){
+        this.altura = altura;
+        calcularArea();
+        calcularPerimetro();
+        calcularHipotenusa();
+        determinarTipoTriangulo();
+    }public void setBase(double base){
+        this.base = base;
+        calcularArea();
+        calcularPerimetro();
+        calcularHipotenusa();
+        determinarTipoTriangulo();
+    }
+
+    /* getters */
+
+    public double getBase(){
+        return(this.base);
+    }
+
+    public double getAltura(){
+        return(this.altura);
     }
 
     public double getArea() {
-        return (base * altura / 2);
+        return area;
     }
 
     public double getHipotenusa() {
@@ -18,27 +69,10 @@ public class TrianguloRectangulo {
     }
 
     public double getPerimetro() {
-        return (base + altura + hipotenusa);
+        return perimetro;
     }
 
-    public void determinarTipoTriangulo() {
-        if (base != altura && altura != hipotenusa) {
-            System.out.println("Es un triángulo escaleno");
-        } else {
-            System.out.println("Es un triángulo isosceles");
-        }
-
-    }
-    public void setBase(double base){
-        this.base = base;
-    }
-    public double getBase(){
-        return(this.base);
-    }
-    public void setAltura(double altura){
-        this.altura = altura;
-    }
-    public double getAltura(){
-        return(this.altura);
+    public String getTipo() {
+        return String.valueOf(tipo);
     }
 }
