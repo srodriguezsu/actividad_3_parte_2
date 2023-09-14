@@ -20,14 +20,20 @@ public class Rectangulo {
     public Rectangulo(double base, double altura){
         this.base = base;
         this.altura = altura;
+        calcularArea();
+        calcularPerimetro();
     }
 
     public void setBase(double base){
         this.base = base;
+        calcularArea();
+        calcularPerimetro();
     }
 
     public void setAltura(double altura){
         this.altura = altura;
+        calcularArea();
+        calcularPerimetro();
     }
 
     /* getters */
