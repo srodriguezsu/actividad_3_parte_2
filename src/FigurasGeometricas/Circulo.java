@@ -1,8 +1,15 @@
 package FigurasGeometricas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Circulo {
     /*El círculo tiene como atributo su radio en centímetros.*/
     private double radio, area, perimetro;
+    /* lista para almacenar circulos creados */
+
+    public static List<Circulo> circulosList = new ArrayList<>();
+
     /* Metodos que establecen el valor del perimetro y del area */
     private void calcularPerimetro(){
         this.perimetro = 2* Math.PI * radio;
@@ -16,6 +23,7 @@ public class Circulo {
         this.radio = radio;
         calcularPerimetro();
         calcularArea();
+        circulosList.add(this);
     }
 
     public void setRadio(double radio){
@@ -36,5 +44,12 @@ public class Circulo {
 
     public double getPerimetro() {
         return perimetro;
+    }
+
+    /* para mostrar los valores */
+
+    @Override
+    public String toString() {
+        return("Circulo de radio " + radio);
     }
 }

@@ -1,8 +1,14 @@
 package FigurasGeometricas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cuadrado {
     /* Atributos: lado en cm - Calcular: area, perimetro */
     private double lado, area, perimetro;
+
+    /* lista para guardar cuadrados creados */
+    public static List<Cuadrado> cuadradosList= new ArrayList<>();
 
     /* Metodos para calcular */
 
@@ -19,6 +25,7 @@ public class Cuadrado {
         this.lado = lado;
         calcularArea();
         calcularPerimetro();
+        cuadradosList.add(this);
     }
 
     public void setLado(double lado) {

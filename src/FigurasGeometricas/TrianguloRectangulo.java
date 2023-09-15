@@ -1,11 +1,18 @@
 package FigurasGeometricas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TrianguloRectangulo {
 
     /* Atributos: base y altura en cm - Calcular: area, perimetro, hipotenusa y determinar tipo */
     public enum TiposTriangulo { Isosceles, Escaleno }
     private double base, altura, area, perimetro, hipotenusa;
     private TiposTriangulo tipo;
+
+    /* lista para guardar todos los triangulos creados */
+
+    public static List<TrianguloRectangulo> triangulosList = new ArrayList<>();
 
     /* Metodo para calcular */
 
@@ -35,6 +42,7 @@ public class TrianguloRectangulo {
         calcularPerimetro();
         calcularHipotenusa();
         determinarTipoTriangulo();
+        triangulosList.add(this);
         }
     public void setAltura(double altura){
         this.altura = altura;

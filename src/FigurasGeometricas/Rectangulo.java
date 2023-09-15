@@ -1,9 +1,16 @@
 package FigurasGeometricas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rectangulo {
     /*Atributos: base y altura en cm */
 
     private double base, altura, area, perimetro;
+
+    /* lista para guardar rectangulos creados */
+
+    public static List<Rectangulo> rectangulosList = new ArrayList<>();
 
     /* Metodos que establecen el valor del perimetro y del area */
 
@@ -22,6 +29,7 @@ public class Rectangulo {
         this.altura = altura;
         calcularArea();
         calcularPerimetro();
+        rectangulosList.add(this);
     }
 
     public void setBase(double base){
