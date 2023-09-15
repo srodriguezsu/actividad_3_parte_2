@@ -60,4 +60,8 @@ public class Rectangulo {
     public double getPerimetro() {
         return perimetro;
     }
+    @Override
+    public String toString() {
+        return("Rectangulo de " + base + "X" + altura);
+    }
 }

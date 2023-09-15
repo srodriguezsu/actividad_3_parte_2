@@ -46,5 +46,9 @@ public class Cuadrado {
     public double getArea() {
         return area;
     }
+    @Override
+    public String toString() {
+        return("Cuadrado de lado " + lado);
+    }
 
 }

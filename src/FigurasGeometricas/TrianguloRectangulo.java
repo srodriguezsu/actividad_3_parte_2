@@ -83,4 +83,9 @@ public class TrianguloRectangulo {
     public String getTipo() {
         return String.valueOf(tipo);
     }
+
+    @Override
+    public String toString() {
+        return("Triangulo-Rectangulo de " + base + "X" + altura);
+    }
 }
