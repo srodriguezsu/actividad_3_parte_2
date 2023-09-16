@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="FigurasCreadas">
-  <grid id="27dc6" binding="panelFigExist" layout-manager="GridLayoutManager" row-count="9" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelFigExist" layout-manager="GridLayoutManager" row-count="11" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="674" height="400"/>
+      <xy x="20" y="20" width="752" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <vspacer id="1f3b6">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <vspacer id="d7151">
@@ -20,12 +20,12 @@
       </vspacer>
       <hspacer id="6de80">
         <constraints>
-          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <hspacer id="b0355">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <vspacer id="522f2">
@@ -35,7 +35,7 @@
       </vspacer>
       <component id="b6adc" class="javax.swing.JLabel" binding="tagCirculos">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Circulos"/>
@@ -43,7 +43,7 @@
       </component>
       <component id="efc6d" class="javax.swing.JLabel" binding="tagCuadrados">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Cuadrados"/>
@@ -51,7 +51,7 @@
       </component>
       <component id="2cefd" class="javax.swing.JLabel" binding="tagRectangulos">
         <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Rectangulos"/>
@@ -59,7 +59,7 @@
       </component>
       <component id="20b68" class="javax.swing.JLabel">
         <constraints>
-          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Triangulos"/>
@@ -67,7 +67,7 @@
       </component>
       <component id="ed409" class="javax.swing.JLabel" binding="txt">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font size="24" style="1"/>
@@ -76,7 +76,7 @@
       </component>
       <component id="6e1a5" class="javax.swing.JLabel" binding="tagFigExist">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font size="18" style="0"/>
@@ -86,49 +86,50 @@
       </component>
       <component id="c5ed6" class="javax.swing.JList" binding="listCirculos">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
-          <model>
-            <item value="Hola"/>
-            <item value="Mundo"/>
-            <item value="Si"/>
-          </model>
+          <font size="14" style="0"/>
+          <model/>
         </properties>
       </component>
       <component id="21404" class="javax.swing.JList" binding="listCuadrados">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
+          <font size="14" style="0"/>
           <model/>
         </properties>
       </component>
       <component id="2ed96" class="javax.swing.JList" binding="listRectangulos">
         <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
+          <font size="14" style="0"/>
           <model/>
         </properties>
       </component>
       <component id="ab13c" class="javax.swing.JList" binding="listTriangulos">
         <constraints>
-          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font size="14" style="0"/>
+        </properties>
       </component>
       <component id="f8449" class="javax.swing.JButton" binding="btnNuevaFig">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Crear figura nueva"/>
@@ -136,9 +137,38 @@
       </component>
       <vspacer id="588ae">
         <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
+      <hspacer id="4dad7">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="fe580">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="7977b">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="a3e30">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="4a0db" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="0"/>
+          <text value="Haz click en una figura para ver sus propiedades"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

@@ -60,10 +60,12 @@ public class FiguraNueva extends JFrame implements ItemListener{
                     System.out.println(trianguloNuevo.getHipotenusa());
                 }
 
+
+                /* re abrir ventana principal */
                 FigurasCreadas w =new FigurasCreadas();
                 w.setContentPane(w.panelFigExist);
                 w.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                w.setSize(600,400);
+                w.setSize(1200,600);
                 w.setVisible(true);
 
 

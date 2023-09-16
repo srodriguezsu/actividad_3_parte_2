@@ -23,7 +23,26 @@ public class FigurasCreadas extends JFrame{
     private JList<TrianguloRectangulo> listTriangulos;
     private JButton btnNuevaFig;
 
+    public void recargar(){
+
+        revalidate();
+        repaint();
+    }
+
     public FigurasCreadas(){
+        btnNuevaFig.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                /* abre ventana para insertar figura */
+                FiguraNueva w =new FiguraNueva();
+                w.setContentPane(w.panelFigNueva);
+                w.setSize(1200,600);
+                w.setVisible(true);
+                w.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                setVisible(false);
+                dispose();
+            }
+        });
 
         /* Definir modelo para insertar a la lista de los cuadrados */
         DefaultListModel<Cuadrado> modeloCuadrados = new DefaultListModel<>();
@@ -58,17 +77,7 @@ public class FigurasCreadas extends JFrame{
         }
         listTriangulos.setModel(modeloTriangulos);
 
-        btnNuevaFig.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                FiguraNueva w =new FiguraNueva();
-                w.setContentPane(w.panelFigNueva);
-                w.setSize(600,400);
-                w.setVisible(true);
-                setVisible(false);
-                dispose();
-            }
-        });
+
 
         /* Al hacer click a cada Circulo, muestra su info */
         listCirculos.addListSelectionListener(new ListSelectionListener() {
